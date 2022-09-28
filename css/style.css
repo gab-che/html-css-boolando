@@ -68,7 +68,62 @@ header a{
 }
 
 .card{
-    background-color: #ff6900;
-    width: 30%;
-    flex-grow: 1;
+    width: calc(100% / 3 - 0.5rem);
+}
+
+/* Proprietà dentro card */
+.card .img-container{
+    position: relative;
+}
+
+.img-container .card-label{
+    position: absolute;
+    left: 0;
+    bottom: 2rem;
+}
+
+.img-container .card-heart{
+    position: absolute;
+    right: 0;
+    top: .5rem;
+}
+
+.card .img-container img{
+    width: 100%;
+}
+
+.img-container span{
+    padding: 0.2rem .5rem;
+}
+
+.img-container .card-label span{
+    font-size: 0.7rem;
+}
+
+.img-container .card-heart span{
+    font-size: 1.5rem;
+}
+
+/* Formattazione testo */
+.bg-green{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.bg-red{
+    background-color: var(--red);
+    color: var(--white);
+}
+
+.bg-white{
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.text-red{
+    color: var(--red);
+}
+
+.text-striked{
+    text-decoration: line-through;
 }
