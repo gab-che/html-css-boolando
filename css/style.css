@@ -18,6 +18,7 @@
 .container{
     width: 920px;
     margin: 0 auto;
+    padding-top: 5rem;
 }
 
 .flex{
@@ -27,6 +28,11 @@
 .header-container{
     background-color: var(--orange);
     box-shadow: 0 0 5px var(--black);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .header-container .container{
