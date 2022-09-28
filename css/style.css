@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 /* CSS properties */
@@ -161,8 +162,29 @@ footer a{
     padding: 2rem 0;
 }
 
+.footer-lists{
+    padding-top: 1rem;
+}
+
 .footer-text,
 .footer-lists{
     justify-content: space-between;
     align-items: center;
+}
+
+/* Hover */
+[class*="img-hover-"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+.card-one:hover .img-hover-1,
+.card-two:hover .img-hover-2,
+.card-three:hover .img-hover-3,
+.card-four:hover .img-hover-4,
+.card-five:hover .img-hover-5,
+.card-six:hover .img-hover-6 {
+    display: block;
 }
