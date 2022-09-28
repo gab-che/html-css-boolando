@@ -27,10 +27,6 @@
 .header-container{
     background-color: var(--orange);
     box-shadow: 0 0 5px var(--black);
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
 }
 
 .header-container .container{
@@ -60,4 +56,19 @@ header a{
     color: var(--white);
     text-decoration: none;
     padding: .5rem;
+}
+
+/* Proprietà card */
+.card-container{
+    padding: 2rem 0;
+}
+
+.card-container.flex{
+    column-gap: 1rem;
+}
+
+.card{
+    background-color: #ff6900;
+    width: 30%;
+    flex-grow: 1;
 }
