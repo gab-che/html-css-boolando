@@ -20,10 +20,44 @@
     margin: 0 auto;
 }
 
+.flex{
+    display: flex;
+}
+
 .header-container{
     background-color: var(--orange);
+    box-shadow: 0 0 5px var(--black);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header-container .container{
+    padding: 1.5rem 0;
+}
+
+.header-container .container .flex{
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer-container{
     background-color: var(--black);
+}
+
+/* Proprietà specifiche header */
+.header-logo{
+    width: 150px;
+}
+
+header ul{
+    list-style: none;
+    font-weight: bold;
+}
+
+header a{
+    color: var(--white);
+    text-decoration: none;
+    padding: .5rem;
 }
