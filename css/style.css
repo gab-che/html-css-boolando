@@ -18,11 +18,14 @@
 .container{
     width: 920px;
     margin: 0 auto;
-    padding-top: 5rem;
 }
 
 .flex{
     display: flex;
+}
+
+main .container{
+    padding-top: 5rem;
 }
 
 .header-container{
@@ -48,19 +51,31 @@
     background-color: var(--black);
 }
 
-/* Proprietà specifiche header */
+/* Proprietà specifiche header e footer*/
 .header-logo{
     width: 150px;
 }
 
-header ul{
+header ul,
+footer, ul{
     list-style: none;
 }
 
-header a{
+header a,
+footer a{
     color: var(--white);
     text-decoration: none;
     padding: .5rem;
+}
+
+.header-sizes,
+.footer-policy-list{
+    margin-left: -0.5rem;
+}
+
+.header-icons,
+.footer-icons{
+    margin-right: -0.5rem;
 }
 
 /* Proprietà card */
@@ -125,6 +140,10 @@ header a{
     color: var(--red);
 }
 
+.text-white{
+    color: var(--white);
+}
+
 .text-striked{
     text-decoration: line-through;
 }
@@ -135,4 +154,15 @@ header a{
 
 .small-text{
     font-size: 0.7rem;
+}
+
+/* Regole per il footer */
+.footer-container{
+    padding: 2rem 0;
+}
+
+.footer-text,
+.footer-lists{
+    justify-content: space-between;
+    align-items: center;
 }
