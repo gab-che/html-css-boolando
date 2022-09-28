@@ -1,5 +1,29 @@
+/* Reset CSS */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* CSS properties */
+:root{
+    --orange: #ff6900;
+    --black: #1a1a1a;
+    --white: #fffefe;
+    --red: #fe0202;
+    --green: #098309;
+}
+
+/* Proprietà container */
+.container{
+    width: 920px;
+    margin: 0 auto;
+}
+
+.header-container{
+    background-color: var(--orange);
+}
+
+.footer-container{
+    background-color: var(--black);
 }
